@@ -4,3 +4,4 @@ As of now, it is nothing more than programming practice...
 
 - API: Discord.Net
 - IDE: VS Code + .NET Framework
+- Language: C#
