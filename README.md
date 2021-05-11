@@ -2,4 +2,5 @@
 This is my first Discord bot and it's fairly stupid. 😁
 As of now, it is no more than programming practice...
 
-- VS Code + .NET
+- API: Discord.Net
+- IDE: VS Code + .NET Framework
