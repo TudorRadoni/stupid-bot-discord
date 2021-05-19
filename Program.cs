@@ -28,7 +28,7 @@ namespace stupid_bot
 
             // _client.Log += Log;
 
-            var token = "ODMxMDQwMDUxNjAwNDI0OTcw.YHPcXA.MWXOwvlR00utG7dBLGQvaWGXfV0";
+            var token = "";
 
             _client.Log += _client_Log;
             
