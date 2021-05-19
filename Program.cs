@@ -26,14 +26,14 @@ namespace stupid_bot
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            //_client.Log += Log;
+            // _client.Log += Log;
 
-            var token = "ODMxMDQwMDUxNjAwNDI0OTcw.YHPcXA.eRrKGxv_SRkyDhyEdBu4GJQy75o";
+            var token = "ODMxMDQwMDUxNjAwNDI0OTcw.YHPcXA.MWXOwvlR00utG7dBLGQvaWGXfV0";
 
             _client.Log += _client_Log;
             
             await RegisterCommandsAsync();
-
+            
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
 
@@ -61,7 +61,7 @@ namespace stupid_bot
             if (message.Author.IsBot) return;
 
             int argPos = 0;
-            if (message.HasStringPrefix("!", ref argPos))
+            if (message.HasStringPrefix("uga buga ", ref argPos))
             {
                 var result = await _commands.ExecuteAsync(context, argPos, _services);
                 if (!result.IsSuccess) Console.WriteLine(result.ErrorReason);
