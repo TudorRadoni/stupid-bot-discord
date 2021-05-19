@@ -14,8 +14,8 @@ You are free to do whatever you please with the **Stupid Bot**!
 💥 Make it crash;
 🚪 Find vulnerabilities within its few lines of code;
 🤖 Beep Boop it!
-`
+```
 - Language: C#
 - API: Discord.Net
 - IDE: VS Code + .NET Framework
-`
+```
