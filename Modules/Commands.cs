@@ -50,6 +50,15 @@ namespace stupid_bot.Modules
                 await ReplyAsync($"{userInfo.Username} is {(numberGen.Next(1, 102)).ToString()} % fat.");
             }
         }
+        
+        [Command("userinfo")]
+        [Summary("Returns info about the current user, or the user parameter, if one passed.")]
+        [Alias("user", "whois")]
+        public async Task UserInfoAsync(SocketUser user = null)
+        {
+            var userInfo = user ?? Context.Client.CurrentUser;
+            await ReplyAsync($"{userInfo.Username}#{userInfo.Discriminator}");
+        }
     }
 
     [Group("do math")]
@@ -95,14 +104,5 @@ namespace stupid_bot.Modules
             Random numberGen = new Random();
             await Context.Channel.SendMessageAsync(stupidMsg[(numberGen.Next(0 , stupidMsg.Length))] + $"\n{num} ^ (1/2) = {Math.Sqrt(num)} \uD83D\uDC4C"); // equivalent to "👌"
         }
-
-        [Command("userinfo")]
-        [Summary("Returns info about the current user, or the user parameter, if one passed.")]
-        [Alias("user", "whois")]
-        public async Task UserInfoAsync(SocketUser user = null)
-        {
-            var userInfo = user ?? Context.Client.CurrentUser;
-            await ReplyAsync($"{userInfo.Username}#{userInfo.Discriminator}");
-        }        
     }
 }
