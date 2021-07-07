@@ -17,5 +17,5 @@ You are free to do whatever you please with the **Stupid Bot**!
 ```
 - Language: C#
 - API: Discord.Net
-- IDE: VS Code + .NET Framework
+- IDE: VS Code + .NET Framework + PowerShell
 ```
