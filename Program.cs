@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Reflection;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace stupid_bot
 {
@@ -28,7 +28,7 @@ namespace stupid_bot
 
             // _client.Log += Log;
 
-            var token = "";
+            var token = "ODMxMDQwMDUxNjAwNDI0OTcw.YHPcXA.a2RWyVc7a1AgtAD50oKuQqOZiIk";
 
             _client.Log += _client_Log;
             
