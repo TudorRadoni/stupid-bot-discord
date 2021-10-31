@@ -28,13 +28,11 @@ namespace stupid_bot
 
             // _client.Log += Log;
 
-            var token = "";
-
             _client.Log += _client_Log;
             
             await RegisterCommandsAsync();
             
-            await _client.LoginAsync(TokenType.Bot, token);
+            await _client.LoginAsync(TokenType.Bot, APIKeys.DiscordToken);
             await _client.StartAsync();
 
             // Block this task until the program is closed.

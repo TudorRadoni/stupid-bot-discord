@@ -99,8 +99,7 @@ namespace stupid_bot.Modules
             await ReplyAsync(outString);
         }
 
-        // This is not working properly! - bot dcs immediately...
-        [Command("join voice", RunMode = RunMode.Async)] 
+        [Command("come voice", RunMode = RunMode.Async)] 
         [Summary("Invites the user to join a voice channel.")]
         public async Task JoinChannel(IVoiceChannel channel = null)
         {
